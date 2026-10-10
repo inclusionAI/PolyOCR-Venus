@@ -5,7 +5,7 @@
 ---
 
 <p align="center">
-  <a href="docs/PolyOCR_Technical_Report.pdf">📄 Technical Report</a> •
+  <a href="docs/PolyOCR-Venus.pdf">📄 Technical Report</a> •
   <a href="#overview">✨ Overview</a> •
   <a href="#benchmark-results">📊 Results</a> •
   <a href="evaluation/ocrbench_v2/README.md">🛠️ Evaluation Guide</a> •
@@ -49,7 +49,7 @@ PolyOCR is a family of **2B and 9B** OCR foundation models built on the **Qwen3.
 - **Large-scale OCR data construction.** Curated OCR resources are complemented by controlled synthesis, model-assisted annotation, and quality verification, forming a corpus of approximately **60 million SFT instances**.
 - **Competence-Guided Policy Optimization (CGPO).** Post-training combines verifier-based Group Relative Policy Optimization (GRPO) with adaptive on-policy distillation, routing teacher supervision according to teacher reliability and the teacher–student competence gap.
 
-The [technical report](docs/PolyOCR_Technical_Report.pdf) describes the model family, data construction, training method, and evaluation across OCRBench v2.1, CC-OCR, and OmniDocBench v1.6. The code currently provided here is the [OCRBench evaluation module](evaluation/ocrbench_v2/README.md); model weights, training code, and the CC-OCR/OmniDocBench pipelines are not included in this release.
+The [technical report](docs/PolyOCR-Venus.pdf) describes the model family, data construction, training method, and evaluation across OCRBench v2.1, CC-OCR, and OmniDocBench v1.6. The code currently provided here is the [OCRBench evaluation module](evaluation/ocrbench_v2/README.md); model weights, training code, and the CC-OCR/OmniDocBench pipelines are not included in this release.
 
 ## Capabilities
 
@@ -125,7 +125,7 @@ PolyOCR/
 ├── requirements.txt
 ├── assets/                         # Project logos and report figures
 ├── docs/
-│   └── PolyOCR_Technical_Report.pdf
+│   └── PolyOCR-Venus.pdf
 └── evaluation/
     └── ocrbench_v2/                 # Evaluation code, configs, scripts, and guide
 ```
