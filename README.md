@@ -135,11 +135,11 @@ PolyOCR/
 If you use PolyOCR or its evaluation protocol in your research, please cite the technical report:
 
 ```bibtex
-@techreport{guangjian2026polyocr,
-  title       = {Venus-PolyOCR: Unified OCR Foundation Models for Text-Centric Visual Intelligence},
-  author      = {{GuangJian Team}},
-  institution = {Ant Group},
-  year        = {2026}
+@article{team2026polyocr,
+  title={PolyOCR-Venus: Unified OCR Foundation Models for Text-Centric Visual Intelligence},
+  author={Team, GuangJian and Huang, Kaili and Zhang, Yongshuo and Fu, Bingtao and Jiang, Changjiang and Qu, Chenfan and Zhang, Chenfeng and Cui, Fangming and Zhang, Gaoyang and Xie, Jiangwei and others},
+  journal={arXiv preprint arXiv:2609.37712},
+  year={2026}
 }
 ```
 
