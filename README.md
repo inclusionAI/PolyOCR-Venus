@@ -20,10 +20,10 @@
 <p align="center"><b>GuangJian Team, Ant Group</b></p>
 
 <p align="center">
-  <img src="assets/benchmark-results.png" width="100%" alt="PolyOCR-9B comparisons on OCRBench v2.1, CC-OCR, and OmniDocBench v1.6">
+  <img src="assets/benchmark-results.png" width="100%" alt="PolyOCR cross-benchmark comparison on OCRBench v2.1, CC-OCR, OmniDocBench v1.6, in-house KIE, and MDPBench">
 </p>
 
-*Results from the technical report. OCRBench v2.1 and CC-OCR use end-to-end inference. The OmniDocBench v1.6 panel shows PolyOCR-9B with a PP-DocLayoutV3-guided pipeline (95.48) and selected baselines; its axis starts at 70, and † marks official-leaderboard results cited in the report. See [Benchmark Results](#benchmark-results) for end-to-end scores and protocol details.*
+*Cross-benchmark comparison on OCRBench v2.1, CC-OCR, OmniDocBench v1.6, in-house KIE, and MDPBench. OmniDocBench uses the PolyOCR-9B layout-guided pipeline; MDPBench uses PolyOCR-2.7B. CC-OCR excludes multilingual OCR, and truncated axes are marked. See [Benchmark Results](#benchmark-results) for end-to-end scores and protocol details.*
 
 **Venus-PolyOCR** brings text recognition, localization, document parsing, information extraction, multilingual transformation, and OCR-centric reasoning into one instruction-following model family.
 
