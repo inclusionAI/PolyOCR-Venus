@@ -155,5 +155,3 @@ PolyOCR builds on Qwen3.5 and uses OCRBench, CC-OCR, and OmniDocBench for evalua
 ## License
 
 The open-source code in this project is licensed under **GPL-2.0**. **OCRBenchV2.1** is licensed under **MIT**. Third-party components retain their original licenses; the included VLMEvalKit framework is licensed under Apache-2.0 (see [its license](evaluation/ocrbench_v2/LICENSE)).
-
-本项目的开源代码采用 **GPL-2.0** 协议；**OCRBenchV2.1** 采用 **MIT** 协议。第三方组件保留各自的原始协议。
