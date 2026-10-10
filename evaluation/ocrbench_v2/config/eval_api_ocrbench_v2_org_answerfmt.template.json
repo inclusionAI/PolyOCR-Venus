@@ -1,0 +1,23 @@
+{
+    "model": {
+        "__RUN_KEY__": {
+            "class": "GPT4V",
+            "model": "__MODEL__",
+            "api_base": "__API_BASE__",
+            "temperature": 0,
+            "max_tokens": 32768,
+            "img_detail": "high",
+            "retry": 6,
+            "timeout": 1800,
+            "wait": 1,
+            "verbose": false,
+            "strip_reasoning_content": true
+        }
+    },
+    "data": {
+        "ocrbench_v21": {
+            "class": "OCRBench_v2",
+            "dataset": "ocrbench_v21"
+        }
+    }
+}

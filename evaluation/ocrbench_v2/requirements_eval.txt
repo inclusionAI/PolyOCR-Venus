@@ -1,0 +1,38 @@
+# === OCRBench_v2 评测框架(run.py + 打分链路)精简固化依赖 ===
+# 数值/科学计算
+numpy
+scipy
+pandas
+# 图像
+pillow
+opencv-python-headless
+# OCRBench_v2 打分链路(lxml/APTED/编辑距离)
+lxml
+apted
+zss
+Distance
+editdistance
+Levenshtein
+# 分词/nlp
+jieba
+nltk
+pylatexenc
+# 数据集
+datasets
+# VLMEvalKit框架基础
+tabulate
+sty
+validators
+python-dotenv
+openai
+rich
+omegaconf
+nest-asyncio
+regex
+tqdm
+requests
+PyYAML
+# transformers + torch (模型推理; CPU版torch避免拉nvidia几GB)
+transformers
+torch
+qwen-vl-utils

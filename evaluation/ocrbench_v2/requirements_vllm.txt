@@ -1,0 +1,7 @@
+# Optional local GPU inference (Linux + a supported GPU/runtime).
+# Install this instead of the default list when using use_vllm=true configs.
+# vLLM chooses compatible torch dependencies through its package metadata.
+# No vLLM version was recorded in the source requirements_frozen.txt; select
+# a version compatible with the target GPU/CUDA and model before deployment.
+-r requirements_ocrbench_v2.txt
+vllm

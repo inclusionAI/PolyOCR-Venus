@@ -1,0 +1,8 @@
+# Standalone API inference only: infer_api_sdk_ocrbench_v2.py and
+# infer_doubao_ocrbench_v2_org.py. Full scoring uses requirements_ocrbench_v2.txt.
+openai
+pandas
+Pillow
+openpyxl
+requests
+tqdm

@@ -1,0 +1,20 @@
+# Default: API inference, offline scoring and the VLMEvalKit import chain.
+# The scoring entry point imports the full dataset/model registries, even when
+# VLMEVAL_NO_TORCH=1. Keep the upstream framework requirements for those imports.
+# Run: python -m pip install -r requirements_ocrbench_v2.txt
+-r requirements.txt
+
+# Dependencies used directly by OCRBench/CDM or its dependency check, but absent
+# from the upstream requirements.txt. Do not rely on transitive installation.
+beautifulsoup4
+PyMuPDF
+scipy
+
+# Framework support imported directly by the bundled source.
+filelock
+PyYAML
+regex
+
+# Non-pip prerequisites: TeX Live (pdflatex/kpsewhich, CJK, gkai fonts),
+# NLTK wordnet and omw-1.4. See README.md and run check_cdm_deps.py.
+# Local GPU inference additionally uses requirements_vllm.txt.

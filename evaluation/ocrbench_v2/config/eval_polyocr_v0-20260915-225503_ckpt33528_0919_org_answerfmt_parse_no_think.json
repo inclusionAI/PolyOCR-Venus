@@ -1,0 +1,25 @@
+{
+    "model": {
+        "eval_polyocr_v0-20260915-225503_ckpt33528_0919_org_answerfmt_parse_no_think": {
+            "class": "Qwen3VLChat",
+            "model_path": "models/polyocr/full_sft_0915_qwen35_2b_8p59m_vqaans_hy87_256g/v0-20260915-225503/checkpoint-33528",
+            "use_custom_prompt": false,
+            "strip_think": true,
+            "enable_thinking": false,
+            "use_vllm": true,
+            "temperature": 1.0,
+            "top_p": 0.95,
+            "top_k": 20,
+            "presence_penalty": 1.5,
+            "max_new_tokens": 32768,
+            "max_num_seqs": 32,
+            "gpu_utils": 0.9
+        }
+    },
+    "data": {
+        "ocrbench_v21": {
+            "class": "OCRBench_v2",
+            "dataset": "ocrbench_v21"
+        }
+    }
+}
