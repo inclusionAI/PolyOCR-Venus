@@ -9,7 +9,7 @@ export NLTK_DATA="${NLTK_DATA:-$WORKDIR/.cache/nltk_data}"
 cd -- "$WORKDIR" || exit $?
 
 # =============================================================================
-# ocrbench_v21 单阶段评测 (网关 API 模型) —— antalchemy 推理 + <answer> 格式约束算分
+# ocrbench_v21 单阶段评测 (网关 API 模型) —— OpenAI SDK 推理 + <answer> 格式约束算分
 # 模型 : 由 MODEL_API 决定, 默认 doubao-seed-2-0-lite-260428
 #        (要跑 claude 就 MODEL_API=claude-opus-4-8; 两者都走 antalchemy /v1/chat/completions, GPT4V 类)
 # 数据 : data/ocrbench_v21.tsv (10000 行 / 30 子类, LMUData 软链)
@@ -18,7 +18,7 @@ cd -- "$WORKDIR" || exit $?
 # 注意 : config/<run>.json 是每次从 config/eval_api_ocrbench_v2_org_answerfmt.template.json 现场生成的,
 #        别手改它 (改模板, 或用 MODEL_API / API_BASE / MODEL_API_KEY 覆盖)
 #
-# 推理侧参照: shell/eval_gpt5_6_sol_api_ocrbench_v2_org_0822.sh
+# 推理入口: infer_api_sdk_ocrbench_v2.py
 #   单阶段一次推完 30 子类 (API 模型无 enable_thinking 开关, 不做 parse/qa 两组切分),
 #   全局 RPM 门 (API_RPM) 封顶速率, 不撞网关 ~60 RPM 租户配额。
 # 算分侧参照: shell/eval_sft0909_v2-20260911-134014_ckpt10_0909_org_answerfmt_two_stage.sh

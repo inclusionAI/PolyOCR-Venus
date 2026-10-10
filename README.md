@@ -13,7 +13,7 @@
 </p>
 
 <h2 align="center">
-  Venus-PolyOCR: Unified OCR Foundation Models<br>
+  PolyOCR-Venus: Unified OCR Foundation Models<br>
   for Text-Centric Visual Intelligence
 </h2>
 
@@ -25,7 +25,7 @@
 
 *Cross-benchmark comparison on OCRBench v2.1, CC-OCR, OmniDocBench v1.6, in-house KIE, and MDPBench. OmniDocBench uses the PolyOCR-9B layout-guided pipeline; MDPBench uses PolyOCR-2.7B. CC-OCR excludes multilingual OCR, and truncated axes are marked. See [Benchmark Results](#benchmark-results) for end-to-end scores and protocol details.*
 
-**Venus-PolyOCR** brings text recognition, localization, document parsing, information extraction, multilingual transformation, and OCR-centric reasoning into one instruction-following model family.
+**PolyOCR-Venus** brings text recognition, localization, document parsing, information extraction, multilingual transformation, and OCR-centric reasoning into one instruction-following model family.
 
 ## Release
 
@@ -40,6 +40,7 @@
 - [Evaluation](#evaluation)
 - [Citation](#citation)
 - [Acknowledgments](#acknowledgments)
+- [License](#license)
 
 ## Overview
 
@@ -104,6 +105,10 @@ The revised dataset is included locally as `evaluation/ocrbench_v2/data/ocrbench
 Run from the repository root in a Linux environment with Python 3.11 or later:
 
 ```bash
+# Fetch the OCRBench v2.1 dataset (requires Git LFS)
+git lfs install
+git lfs pull
+
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
@@ -120,7 +125,7 @@ Full scoring also requires TeX Live components for CDM and NLTK corpora for hand
 ### Repository Layout
 
 ```text
-PolyOCR/
+PolyOCR-Venus/
 ├── README.md
 ├── requirements.txt
 ├── assets/                         # Project logos and report figures

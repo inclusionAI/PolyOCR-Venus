@@ -1,7 +1,6 @@
-# OCRBench v2 评测
+# OCRBench v2.1 评测
 
-本目录是 PolyOCR 项目的评测模块，完整项目介绍与技术报告见[仓库首页](../../README.md)。报告中的 **OCRBench v2.1** 指本项目修订标注和评分流程后的协议，数据集名与数据文件统一命名为 `ocrbench_v21`。复现报告结果需使用相同的修订标注和评分 / judge 配置，不能直接与原始 OCRBench v2 分数比较。
-
+本目录是 PolyOCR-Venus 项目的评测模块，完整项目介绍与技术报告见[仓库首页](../../README.md)。报告中的 **OCRBench v2.1** 指本项目修订标注和评分流程后的协议，数据集名与数据文件统一命名为 `ocrbench_v21`。复现报告结果需使用相同的修订标注和评分 / judge 配置，不能直接与原始 OCRBench v2 分数比较。
 
 导入时清理了硬编码 API 凭据，并将机器相关的路径改成项目相对路径或环境变量。逐文件来源、SHA-256 和修改类型记录在 [`SOURCE_MANIFEST.json`](SOURCE_MANIFEST.json)。VLMEvalKit 的模型与数据集注册表会导入其他模块，因此保留完整 `vlmeval/` 源码以满足导入依赖；仅收录与 OCRBench v2 有关的项目级配置、运行脚本和工具。
 
@@ -33,6 +32,10 @@
 以下命令均在本目录执行。完整评测面向 Linux 环境，使用 Python 3.11 或更高版本；本次导入用 Python 3.11 做了语法检查。
 
 ```bash
+# 在仓库根目录下载数据（需先安装 Git LFS）
+git lfs install
+git lfs pull
+
 cd evaluation/ocrbench_v2
 python3 -m venv .venv
 source .venv/bin/activate
@@ -151,7 +154,7 @@ Shell 脚本按自身位置定位本评测目录，并切换到该目录执行�
 - 82 个 JSON 文件（含来源清单）通过解析检查。
 - 114 段内嵌 Python 通过语法检查；44 个 Shell 入口通过迁移目录定位检查。
 - 已扫描待发布文件和提交历史，清理机器相关路径。
-- 未运行模型推理或全量 OCRBench 评分；数据、模型和外部 judge 服务需自行准备。
+- 未运行模型推理或全量 OCRBench 评分；数据通过 Git LFS 下载，模型和外部 judge 服务需自行准备。
 
 上游说明见 [`README.upstream.md`](README.upstream.md)，许可证见 [`LICENSE`](LICENSE)。
 
