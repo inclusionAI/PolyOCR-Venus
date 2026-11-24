@@ -1,5 +1,5 @@
 antlr4-python3-runtime==4.11.0
-filelock==3.16.1
+filelock==4.2.1
 geopy==2.4.1
 jieba==0.42.1
 nltk==3.9.1
