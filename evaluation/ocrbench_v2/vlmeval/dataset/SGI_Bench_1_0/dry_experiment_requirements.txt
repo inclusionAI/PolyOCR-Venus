@@ -14,7 +14,7 @@ datasets==2.15.0
 dill==0.3.7
 filelock==3.19.1
 fire==0.7.1
-fonttools==4.59.2
+fonttools==4.60.2
 frozenlist==1.7.0
 fsspec==2023.10.0
 h5py==3.10.0
