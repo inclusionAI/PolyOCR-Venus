@@ -1,6 +1,6 @@
 accelerate==1.1.0
 bert-score==0.3.13
-datasets==2.21.0
+datasets==5.0.1
 einops==0.8.0
 evaluate==0.4.3
 fastapi==0.115.0
