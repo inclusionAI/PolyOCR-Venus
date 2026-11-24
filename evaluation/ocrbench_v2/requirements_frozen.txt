@@ -20,7 +20,7 @@ blake3==1.0.8
 brotli==1.2.0
 cachetools==7.1.4
 cairocffi==1.7.1
-CairoSVG==2.9.0
+CairoSVG==2.9.1
 cbor2==6.1.2
 cd-fvd==0.1.1
 certifi==2026.5.20
