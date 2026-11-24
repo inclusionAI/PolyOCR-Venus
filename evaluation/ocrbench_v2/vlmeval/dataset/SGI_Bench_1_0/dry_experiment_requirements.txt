@@ -38,7 +38,7 @@ pathlib==1.0.1
 patsy==1.0.1
 Pillow==10.1.0
 propcache==0.3.2
-pyarrow==21.0.0
+pyarrow==23.0.1
 pyarrow-hotfix==0.7
 pyparsing==3.0.9
 python-dateutil==2.9.0.post0
