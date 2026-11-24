@@ -240,7 +240,7 @@ typer==0.25.1
 typing_extensions==4.15.0
 typing-inspection==0.4.2
 tzdata==2026.2
-urllib3==2.7.0
+urllib3==2.8.0
 uvicorn==0.49.0
 uvloop==0.22.1
 validators==0.35.0
