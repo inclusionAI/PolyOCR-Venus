@@ -102,7 +102,7 @@ latex2sympy2_extended==1.11.0
 lazy-loader==0.5
 Levenshtein==0.27.3
 lightning-utilities==0.15.3
-litellm==1.82.6
+litellm==1.100.4
 llguidance==1.7.6
 llvmlite==0.47.0
 lm-format-enforcer==0.11.3
