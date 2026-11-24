@@ -180,7 +180,7 @@ pydantic-settings==2.14.1
 pydub==0.25.1
 pyelftools==0.33
 Pygments==2.20.0
-PyJWT==2.13.0
+PyJWT==2.15.0
 pylatexenc==2.10
 pyparsing==3.3.2
 python-dateutil==2.9.0.post0
