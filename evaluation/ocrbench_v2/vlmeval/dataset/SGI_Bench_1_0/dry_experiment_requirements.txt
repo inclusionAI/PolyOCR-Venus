@@ -16,7 +16,7 @@ filelock==3.19.1
 fire==0.7.1
 fonttools==4.59.2
 frozenlist==1.7.0
-fsspec==2023.10.0
+fsspec==2026.6.0
 h5py==3.10.0
 huggingface-hub==0.34.4
 idna==3.10
