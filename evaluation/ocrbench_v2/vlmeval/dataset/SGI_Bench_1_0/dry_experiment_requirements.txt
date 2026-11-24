@@ -60,7 +60,7 @@ toolz==1.0.0
 tqdm==4.66.2
 typing_extensions==4.15.0
 tzdata==2025.2
-urllib3==2.5.0
+urllib3==2.8.0
 xarray==2023.6.0
 xgboost==1.7.6
 xxhash==3.5.0
