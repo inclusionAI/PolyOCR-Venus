@@ -10,7 +10,7 @@ charset-normalizer==3.4.3
 colorama==0.4.6
 contourpy==1.3.2
 cycler==0.12.1
-datasets==2.15.0
+datasets==5.0.1
 dill==0.3.7
 filelock==3.19.1
 fire==0.7.1
