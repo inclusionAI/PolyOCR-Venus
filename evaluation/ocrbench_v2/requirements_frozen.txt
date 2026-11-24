@@ -62,7 +62,7 @@ fastuuid==0.14.0
 filelock==3.29.1
 fonttools==4.63.0
 frozenlist==1.8.0
-fsspec==2026.4.0
+fsspec==2026.6.0
 ftfy==6.3.1
 gguf==0.19.0
 google-auth==2.53.0
